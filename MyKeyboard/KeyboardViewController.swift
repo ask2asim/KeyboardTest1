@@ -1,12 +1,5 @@
-//
-//  KeyboardViewController.swift
-//  MyKeyboard
-//
-//  Created by Asim Das on 21/3/20.
-//  Copyright © 2020 Asim Das. All rights reserved.
-//
-
-import UIKit
+//import UIKit
+import SwiftUI
 
 class KeyboardViewController: UIInputViewController {
 
@@ -20,6 +13,13 @@ class KeyboardViewController: UIInputViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let child = UIHostingController(rootView: MyKeyButtons())
+         //that's wrong, it must be true to make flexible constraints work
+        // child.translatesAutoresizingMaskIntoConstraints = false
+         child.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+         view.addSubview(child.view)
+         addChild(child)//not sure what is this for, it works without it.
         
         // Perform custom UI setup here
         self.nextKeyboardButton = UIButton(type: .system)
@@ -57,5 +57,13 @@ class KeyboardViewController: UIInputViewController {
         }
         self.nextKeyboardButton.setTitleColor(textColor, for: [])
     }
+    
+    
+    //==================================
+    func keyPressed() {
+          print("test--- clicked! ")
+          //textDocumentProxy.insertText("a")
+          (textDocumentProxy as UIKeyInput).insertText("a")
+      }
 
 }

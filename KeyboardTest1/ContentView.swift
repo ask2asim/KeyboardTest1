@@ -10,7 +10,28 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            
+            Button(action: {
+                
+                UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:], completionHandler: nil)
+                
+            }) {
+                Text("Set Keyboard First")
+                    .font(.title)
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(Color.purple)
+            }
+            
+            
+            Text("General > Keyboard > Keyboards > Add Keyboard")
+                .foregroundColor(Color.purple)
+                .padding()
+            
+            
+            
+        }
     }
 }
 

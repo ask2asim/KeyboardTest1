@@ -15,6 +15,9 @@
 		64D870B424266720007CAA6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64D870B224266720007CAA6E /* LaunchScreen.storyboard */; };
 		64D870C22426673A007CAA6E /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D870C12426673A007CAA6E /* KeyboardViewController.swift */; };
 		64D870C62426673A007CAA6E /* MyKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 64D870BF2426673A007CAA6E /* MyKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		64D870CC24266955007CAA6E /* MyKeyButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D870CB24266955007CAA6E /* MyKeyButtons.swift */; };
+		64D870CD24266955007CAA6E /* MyKeyButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D870CB24266955007CAA6E /* MyKeyButtons.swift */; };
+		64D870CE24266F59007CAA6E /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D870C12426673A007CAA6E /* KeyboardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,7 @@
 		64D870BF2426673A007CAA6E /* MyKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		64D870C12426673A007CAA6E /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		64D870C32426673A007CAA6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64D870CB24266955007CAA6E /* MyKeyButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyKeyButtons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				64D870C12426673A007CAA6E /* KeyboardViewController.swift */,
+				64D870CB24266955007CAA6E /* MyKeyButtons.swift */,
 				64D870C32426673A007CAA6E /* Info.plist */,
 			);
 			path = MyKeyboard;
@@ -224,8 +229,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				64D870A82426671E007CAA6E /* AppDelegate.swift in Sources */,
+				64D870CE24266F59007CAA6E /* KeyboardViewController.swift in Sources */,
 				64D870AA2426671E007CAA6E /* SceneDelegate.swift in Sources */,
 				64D870AC2426671E007CAA6E /* ContentView.swift in Sources */,
+				64D870CC24266955007CAA6E /* MyKeyButtons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64D870C22426673A007CAA6E /* KeyboardViewController.swift in Sources */,
+				64D870CD24266955007CAA6E /* MyKeyButtons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
