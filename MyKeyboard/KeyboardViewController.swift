@@ -10,14 +10,12 @@ class KeyboardViewController: UIInputViewController {
         view.addSubview(vc.view)
     }
     
-    
-    //==================================
+
     func keyPressed() {
-        print("test--- clicked! ")
+        //print("test--- clicked! ")
         //textDocumentProxy.insertText("a")
         (textDocumentProxy as UIKeyInput).insertText("a")
     }
-    
 }
 
 
@@ -29,8 +27,8 @@ struct MyKeyButtons: View {
             ForEach(data, id: \.self) { aData in
                 
                 Button(action: {
-                    print("button pressed!")
                     //keyPressed()
+                    print("button pressed!")
                     
                 }) {
                     Text(aData).fontWeight(.bold).font(.title)
