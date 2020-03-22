@@ -9,13 +9,6 @@ class KeyboardViewController: UIInputViewController {
         vc.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         view.addSubview(vc.view)
     }
-    
-
-    func keyPressed() {
-        //print("test--- clicked! ")
-        //textDocumentProxy.insertText("a")
-        (textDocumentProxy as UIKeyInput).insertText("a")
-    }
 }
 
 
@@ -27,9 +20,7 @@ struct MyKeyButtons: View {
             ForEach(data, id: \.self) { aData in
                 
                 Button(action: {
-                    //keyPressed()
-                    print("button pressed!")
-                    
+                    print("button pressed!") // Not working!
                 }) {
                     Text(aData).fontWeight(.bold).font(.title)
                         .foregroundColor(.white).padding()
